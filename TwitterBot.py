@@ -5,17 +5,11 @@ import datetime
 import os
 from os import environ
 
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
-
-
 #Twitter API Codes
-consumer_key = env['CONSUMER_KEY']
-consumer_secret = env['CONSUMER_SECRET']
-access_token = env['ACCESS_KEY']
-access_token_secret = env['ACCCESS_SECRET']
+consumer_key = environ['CONSUMER_KEY']
+consumer_secret = environ['CONSUMER_SECRET']
+access_token = environ['ACCESS_KEY']
+access_token_secret = environ['ACCCESS_SECRET']
 
 #Twitter API
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
