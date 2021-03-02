@@ -1,1 +1,1 @@
-web: gunicorn lawlortwitterbot.wsgi
+web: gunicorn TwitterBot.wsgi
