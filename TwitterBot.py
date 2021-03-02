@@ -2,7 +2,8 @@ __author__ = 'Anthony Lawlor'
 import pyowm
 import tweepy
 import datetime
-import environ
+import os
+from os import environ
 
 env = environ.Env(
     # set casting, default value
