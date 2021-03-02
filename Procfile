@@ -1,1 +1,1 @@
-web: gunicorn TwitterBot.wsgi
+worker: python TwitterBot.py
